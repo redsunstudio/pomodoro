@@ -1,0 +1,79 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #4A4A4A;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.timer {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.time-display {
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: grey;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #4A4A4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 565.48; /* Full circle circumference for r=90 */
+    stroke-dashoffset: 565.48;
+    stroke: #4A4A4A; /* Dark grey (graphite) */
+}
+
+.progress-ring__background {
+    stroke: #e6e6e6; /* Light grey background for the circle */
+}
